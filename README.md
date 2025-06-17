@@ -1,82 +1,82 @@
-# Full Admin Dashboard Without API
+# Panel de Administración Completo Sin API
 
-![Dashboard Preview](https://example.com/dashboard-preview.png)
+![Vista previa del panel](https://example.com/dashboard-preview.png)
 
-Welcome to the **Full Admin Dashboard Without API** repository! This project showcases a modern and responsive admin dashboard built using React and Material UI (MUI). With a clean design and reusable components, this dashboard is perfect for managing data efficiently. 
+¡Bienvenido al repositorio de **Panel de Administración Completo Sin API**! Este proyecto muestra un panel de administración moderno y responsivo construido con React y Material UI (MUI). Con un diseño limpio y componentes reutilizables, este dashboard es perfecto para gestionar datos de manera eficiente.
 
-You can find the latest releases [here](https://github.com/alonedeveloper08/Full-Admin-Dashboard-Without-API/releases). Please download the necessary files and execute them to get started.
+Puedes encontrar las últimas versiones [aquí](https://github.com/jorge-r-rodriguez/dashboard). Descarga los archivos necesarios y ejecútalos para comenzar.
 
-## Table of Contents
+## Tabla de Contenidos
 
-1. [Features](#features)
-2. [Technologies Used](#technologies-used)
-3. [Installation](#installation)
-4. [Usage](#usage)
-5. [Folder Structure](#folder-structure)
-6. [Contributing](#contributing)
-7. [License](#license)
-8. [Contact](#contact)
+1. [Características](#características)  
+2. [Tecnologías Utilizadas](#tecnologías-utilizadas)  
+3. [Instalación](#instalación)  
+4. [Uso](#uso)  
+5. [Estructura de Carpetas](#estructura-de-carpetas)  
+6. [Contribuciones](#contribuciones)  
+7. [Licencia](#licencia)  
+8. [Contacto](#contacto)
 
-## Features
+## Características
 
-- **Modern Design**: The dashboard features a sleek and modern interface that enhances user experience.
-- **Responsive Layout**: The layout adjusts seamlessly to different screen sizes, making it mobile-friendly.
-- **Reusable Components**: Utilize components built with MUI for consistency and efficiency.
-- **Data Management**: Manage and visualize data with ease through intuitive charts and tables.
-- **Customizable**: Easily modify styles and components to fit your specific needs.
+- **Diseño Moderno**: Interfaz elegante y moderna que mejora la experiencia del usuario.  
+- **Diseño Responsivo**: Se adapta perfectamente a distintos tamaños de pantalla, ideal para móviles.  
+- **Componentes Reutilizables**: Utiliza componentes construidos con MUI para mantener coherencia y eficiencia.  
+- **Gestión de Datos**: Administra y visualiza datos fácilmente mediante tablas y gráficos intuitivos.  
+- **Personalizable**: Modifica estilos y componentes fácilmente para adaptarlo a tus necesidades.
 
-## Technologies Used
+## Tecnologías Utilizadas
 
-This project uses a variety of technologies to create a robust and user-friendly dashboard:
+Este proyecto utiliza diversas tecnologías para crear un dashboard robusto y fácil de usar:
 
-- **React**: A JavaScript library for building user interfaces.
-- **Material UI (MUI)**: A popular React UI framework that provides pre-designed components.
-- **JavaScript**: The core programming language used throughout the project.
-- **React Router**: For handling routing within the application.
-- **HTML & CSS**: The fundamental building blocks for web development.
+- **React**: Librería JavaScript para construir interfaces de usuario.  
+- **Material UI (MUI)**: Framework UI para React con componentes preconstruidos.  
+- **JavaScript**: Lenguaje de programación principal usado en el proyecto.  
+- **React Router**: Para el enrutamiento dentro de la aplicación.  
+- **HTML & CSS**: Tecnologías base para el desarrollo web.
 
-## Installation
+## Instalación
 
-To set up the project locally, follow these steps:
+Para ejecutar el proyecto localmente, sigue estos pasos:
 
-1. **Clone the repository**:
-
-   ```bash
-   git clone https://github.com/alonedeveloper08/Full-Admin-Dashboard-Without-API.git
-   ```
-
-2. **Navigate into the project directory**:
+1. **Clona el repositorio**:
 
    ```bash
-   cd Full-Admin-Dashboard-Without-API
+   git clone https://github.com/jorge-r-rodriguez/dashboard.git
    ```
 
-3. **Install dependencies**:
+2. **Entra en el directorio del proyecto**:
+
+   ```bash
+   cd dashboard
+   ```
+
+3. **Instala las dependencias**:
 
    ```bash
    npm install
    ```
 
-4. **Run the application**:
+4. **Ejecuta la aplicación**:
 
    ```bash
    npm start
    ```
 
-Your application should now be running on `http://localhost:3000`.
+La aplicación debería ejecutarse en `http://localhost:3000`.
 
-## Usage
+## Uso
 
-Once the application is running, you can navigate through the various sections of the dashboard. Use the sidebar to access different features like user management, data visualization, and settings. Each component is designed to be user-friendly and intuitive.
+Una vez que la aplicación está en marcha, puedes navegar por las distintas secciones del panel. Usa la barra lateral para acceder a funcionalidades como gestión de usuarios, visualización de datos y configuración. Cada componente está diseñado para ser intuitivo y fácil de usar.
 
-For a detailed overview of the components and their functionalities, refer to the documentation within the project.
+Para una descripción detallada de los componentes y sus funcionalidades, revisa la documentación dentro del proyecto.
 
-## Folder Structure
+## Estructura de Carpetas
 
-The project is organized in a way that makes it easy to navigate and understand:
+El proyecto está organizado de forma clara para facilitar su comprensión:
 
 ```
-Full-Admin-Dashboard-Without-API/
+dashboard/
 ├── public/
 │   ├── index.html
 │   └── favicon.ico
@@ -96,51 +96,51 @@ Full-Admin-Dashboard-Without-API/
 └── package.json
 ```
 
-### Component Breakdown
+### Detalle de Componentes
 
-- **Header**: Contains the title and navigation links.
-- **Sidebar**: Provides links to different sections of the dashboard.
-- **Dashboard**: Displays key metrics and visualizations.
-- **Charts**: Contains reusable chart components for data representation.
+- **Header**: Contiene el título y los enlaces de navegación.  
+- **Sidebar**: Accesos a las diferentes secciones del panel.  
+- **Dashboard**: Muestra métricas clave y visualizaciones.  
+- **Charts**: Componentes reutilizables para gráficos.
 
-## Contributing
+## Contribuciones
 
-We welcome contributions to this project! If you have suggestions or improvements, please follow these steps:
+¡Se agradecen las contribuciones! Si deseas sugerir mejoras:
 
-1. **Fork the repository**.
-2. **Create a new branch**:
-
-   ```bash
-   git checkout -b feature/YourFeature
-   ```
-
-3. **Make your changes** and commit them:
+1. **Haz un fork del repositorio**.  
+2. **Crea una nueva rama**:
 
    ```bash
-   git commit -m "Add your message here"
+   git checkout -b feature/TuFuncionalidad
    ```
 
-4. **Push to the branch**:
+3. **Realiza tus cambios** y haz commit:
 
    ```bash
-   git push origin feature/YourFeature
+   git commit -m "Agrega tu mensaje aquí"
    ```
 
-5. **Open a pull request**.
+4. **Sube la rama**:
 
-Your contributions will help improve this project for everyone.
+   ```bash
+   git push origin feature/TuFuncionalidad
+   ```
 
-## License
+5. **Abre un Pull Request**.
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+Tus aportes ayudarán a mejorar este proyecto para todos.
 
-## Contact
+## Licencia
 
-For questions or feedback, feel free to reach out:
+Este proyecto está bajo la licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
 
-- **GitHub**: [alonedeveloper08](https://github.com/alonedeveloper08)
+## Contacto
+
+Si tienes preguntas o sugerencias, puedes contactarme:
+
+- **GitHub**: [alonedeveloper08](https://github.com/jorge-r-rodriguez)  
 - **Email**: alonedeveloper@example.com
 
-You can also find the latest releases [here](https://github.com/alonedeveloper08/Full-Admin-Dashboard-Without-API/releases). Download the files and execute them to explore the features of this dashboard.
+También puedes encontrar las últimas versiones [aquí](https://github.com/jorge-r-rodriguez/dashboard). Descarga los archivos y ejecútalos para explorar todas las funcionalidades.
 
-Thank you for checking out the **Full Admin Dashboard Without API**! We hope you find it useful for your projects.
+¡Gracias por visitar **Panel de Administración Completo Sin API**! Esperamos que te sea útil para tus proyectos.

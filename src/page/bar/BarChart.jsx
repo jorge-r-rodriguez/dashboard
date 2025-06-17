@@ -23,7 +23,7 @@ ChartJS.register(
 export default function BarChart(isDashboard = false) {
   const theme = useTheme();
   const data = {
-    labels: ["2019", "2020", "2021", "2022", "2023"],
+    labels: ["2019", "2020", "2021", "2022", "2023", "2024", "2025"],
     datasets: [
       {
         label: "Garmany",
