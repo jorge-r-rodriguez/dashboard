@@ -1,12 +1,12 @@
 export const columns = [
-  { field: "id", headerName: "ID", width: 100 },
-  { field: "registrarId", headerName: "Registrar ID", widht: 100 },
+  { field: "id", headerName: "ID", width: 40 },
+  { field: "registrarId", headerName: "Registrar ID", flex: 1 },
   {
     field: "name",
     headerName: "Name",
     cellClassName: "name-column--cell",
-    // flex: 1,
-    widht: 150,
+    flex: 1,
+    //width: 150,
   },
   {
     field: "age",
@@ -14,35 +14,35 @@ export const columns = [
     type: "number",
     headerAlign: "left",
     align: "left",
-    widht: 100,
+    width: 40
   },
   {
     field: "phone",
     headerName: "Phone Number",
-    // flex: 1,
-    widht: 200,
+    flex: 1,
+    //width: 200,
   },
   {
     field: "email",
     headerName: "Email",
-    // flex: 1,
-    width: 250,
+    flex: 1,
+    //width: 250,
   },
   {
     field: "address",
     headerName: "Address",
-    width: 200,
+    //width: 200,
   },
   {
     field: "city",
     headerName: "City",
-    // flex: 1,
-    width: 100,
+    flex: 1,
+    //width: 100,
   },
   {
     field: "zipCode",
     headerName: "Zip Code",
-    width: 100,
+    //width: 100,
   },
 ];
 
@@ -71,8 +71,8 @@ export const rows = [
   },
   {
     id: 3,
-    name: "Ali",
-    email: "Ali@gmail.com",
+    name: "Matias",
+    email: "Al@gmail.com",
     age: 45,
     phone: "+624 59-854-8958",
     address: "Cangas - Galicia",
@@ -82,7 +82,7 @@ export const rows = [
   },
   {
     id: 4,
-    name: "Abd",
+    name: "miguel",
     email: "abd@gmail.com",
     age: 16,
     phone: "(921)425-6742",
@@ -93,8 +93,8 @@ export const rows = [
   },
   {
     id: 5,
-    name: "Amal",
-    email: "amal@gmail.com",
+    name: "Ariel",
+    email: "ariel@gmail.com",
     age: 31,
     phone: "(421)445-1189",
     address: "Cangas - Galicia",
@@ -104,7 +104,7 @@ export const rows = [
   },
   {
     id: 6,
-    name: "Noha",
+    name: "jhon",
     email: "noho@gmail.com",
     age: 78,
     phone: "(232)545-6483",
@@ -115,8 +115,8 @@ export const rows = [
   },
   {
     id: 7,
-    name: "Hala",
-    email: "hala@gmail.com",
+    name: "Nahuel",
+    email: "nahuel@gmail.com",
     age: 44,
     phone: "(543)124-0123",
     address: "Cangas - Galicia",
@@ -126,8 +126,8 @@ export const rows = [
   },
   {
     id: 8,
-    name: "Shahed",
-    email: "shahed@gmail.com",
+    name: "Rafael",
+    email: "rafael@gmail.com",
     age: 36,
     phone: "(222)444-5555",
     address: "Cangas - Galicia",
@@ -137,7 +137,7 @@ export const rows = [
   },
   {
     id: 9,
-    name: "Anas",
+    name: "Ana",
     email: "anas@gmail.com",
     age: 65,
     phone: "(444)555-6239",
@@ -148,8 +148,8 @@ export const rows = [
   },
   {
     id: 10,
-    name: "Suliman",
-    email: "suliman@gmail.com",
+    name: "Ramiro",
+    email: "ramiro@gmail.com",
     age: 42,
     phone: "(222)444-5555",
     address: "Cangas - Galicia",
@@ -159,8 +159,8 @@ export const rows = [
   },
   {
     id: 11,
-    name: "Rateb",
-    email: "rateb@gmail.com",
+    name: "Nicolas",
+    email: "Nicolas@gmail.com",
     age: 11,
     phone: "(444)555-6239",
     address: "Cangas - Galicia",

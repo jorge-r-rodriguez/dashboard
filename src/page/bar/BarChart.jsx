@@ -27,21 +27,28 @@ export default function BarChart(isDashboard = false) {
     datasets: [
       {
         label: "Garmany",
-        data: [1700, 1800, 1900, 2000, 2060],
+        data: [1700, 1800, 1900, 2000, 1000],
         backgroundColor: "rgba(75, 192, 192, 0.5)",
         borderColor: "rgba(54, 162, 235, 0.5)",
         borderWidth: 1,
       },
       {
         label: "France",
-        data: [1400, 1500, 1600, 1750, 1708],
+        data: [1400, 1500, 1600, 1750, 1000],
         backgroundColor: "rgba(153, 102, 255, 0.5)",
         borderColor: "rgba(54, 162, 235, 0.5",
         borderWidth: 1,
       },
       {
         label: "Spain",
-        data: [900, 1000, 1100, 1200, 1250],
+        data: [900, 1000, 1100, 1200, 1000],
+        backgroundColor: "rgba(54, 162, 235, 0.5)",
+        borderColor: "rgba(54, 162, 235, 0.5)",
+        borderWidth: 1,
+      },
+			      {
+        label: "Argentine",
+        data: [900, 1000, 1100, 1200, 1000],
         backgroundColor: "rgba(54, 162, 235, 0.5)",
         borderColor: "rgba(54, 162, 235, 0.5)",
         borderWidth: 1,
@@ -69,7 +76,7 @@ export default function BarChart(isDashboard = false) {
       },
       title: {
         display: isDashboard ? true : false,
-        text: "Salaary By Country (2019 - 2024)",
+        text: "Salaary By Country (2019 - 2025)",
         color: theme.palette.text.primary,
       },
     },
