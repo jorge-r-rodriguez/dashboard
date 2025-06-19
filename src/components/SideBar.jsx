@@ -191,7 +191,7 @@ export default function SideBar({ open, handleDrawerClose }) {
             height: open ? "88px" : "40px",
           }}
           alt=".."
-          src="imagen-perfil.jpg"
+          src="imagen-perfil.png"
         />
         <Typography
           className="transition"

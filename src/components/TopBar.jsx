@@ -57,7 +57,7 @@ const demoSession = {
   user: {
     name: "Jorge Rodriguez",
     email: "Jorge@gmail.com",
-    image: "imagen-perfil.jpg",
+    image: "imagen-perfil.png",
   },
 };
 
