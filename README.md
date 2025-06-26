@@ -91,6 +91,11 @@ npm run dev
 
 Este proyecto usa un login simulado. Podés ingresar con cualquier combinación válida como:
 
+## 🌐 Demo en vivo
+
+[![Ingresando en:](https://img.shields.io/badge/GitHub%20Pages-Dashboard-blue?logo=github)](https://jorge-r-rodriguez.github.io/dashboard/)
+
+
 ```
 Email: demo@site.com
 Password: 12345678
