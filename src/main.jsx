@@ -59,7 +59,10 @@ const router = createBrowserRouter(
         </Route>
       </Route>
     </>
-  )
+  ),
+  {
+    basename: "/dashboard", // Necesario para GitHub Pages
+  }
 );
 
 ReactDOM.createRoot(document.getElementById("root")).render(
