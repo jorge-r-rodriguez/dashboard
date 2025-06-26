@@ -11,7 +11,7 @@ import {
   styled,
   Typography,
 } from "@mui/material";
-import React from "react";
+import React, { useContext } from "react";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import MuiDrawer from "@mui/material/Drawer";
@@ -28,6 +28,7 @@ import {
   ReceiptOutlined,
   TimelineOutlined,
 } from "@mui/icons-material";
+import { CasUserContext } from "../context/CasUserContext";
 import { useLocation, useNavigate } from "react-router-dom";
 import { grey } from "@mui/material/colors";
 
@@ -151,6 +152,8 @@ export default function SideBar({ open, handleDrawerClose }) {
   const theme = useTheme();
   const navigate = useNavigate();
   const location = useLocation();
+  const { casUser } = useContext(CasUserContext);
+	console.log("🧠 casUser en SideBar:", casUser);
   return (
     <Drawer variant="permanent" open={open}>
       <Box>
@@ -193,21 +196,18 @@ export default function SideBar({ open, handleDrawerClose }) {
           alt=".."
           src="imagen-perfil.png"
         />
-        <Typography
-          className="transition"
-          align="center"
-          sx={{ fontSize: open ? "17px" : "0" }}
-        >
-          Jorge
-        </Typography>
-        <Typography
-          className="transition"
-          align="center"
-          // @ts-ignore
-          sx={{ fontSize: open ? "15px" : "0", color: theme.palette.info.main }}
-        >
-          Admin
-        </Typography>
+        {/*
+					Mostramos el nombre del usuario autenticado por CAS,
+					si está disponible en el contexto CasUserContext
+				*/}
+<Typography
+  className="transition"
+  align="center"
+  sx={{ fontSize: open ? "17px" : "0" }}
+>
+  {casUser?.name || "Cargando..."}
+</Typography>
+
 
         <Divider />
 

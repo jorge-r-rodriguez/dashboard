@@ -22,8 +22,10 @@ import { Visibility, VisibilityOff } from "@mui/icons-material";
 import TopBar from "../components/TopBar";
 import { getDesignTokens } from "../theme";
 import { Link, useNavigate } from "react-router-dom";
+import { useCasUserContext } from "../context/CasUserContext"; // ✅ importar el contexto
 
 export default function Login() {
+  const { setCasUser } = useCasUserContext(); // ✅ usar el setter del usuario
   const [formData, setFormData] = useState({
     email: "",
     password: "",
@@ -32,9 +34,7 @@ export default function Login() {
   const navigate = useNavigate();
 
   const [mode, setMode] = React.useState(
-    localStorage.getItem("currentMode")
-      ? localStorage.getItem("currentMode")
-      : "dark"
+    localStorage.getItem("currentMode") ?? "dark"
   );
   const theme = React.useMemo(() => createTheme(getDesignTokens(mode)), [mode]);
 
@@ -58,7 +58,6 @@ export default function Login() {
     }
 
     setErrors(newErrors);
-
     return Object.keys(newErrors).length === 0;
   };
 
@@ -68,16 +67,21 @@ export default function Login() {
 
   const handleLogin = (e) => {
     e.preventDefault();
-
     if (!validate()) return;
 
     setLoading(true);
 
     setTimeout(() => {
-      console.log("User Logged In:", formData);
+      // Simulación de login exitoso: guardar en contexto
+      const fakeUser = {
+        email: formData.email,
+        name: "Demo User",
+      };
+
+      setCasUser(fakeUser); // <- guarda el usuario
       setLoading(false);
-      navigate("/");
-    }, 2000);
+      navigate("/"); // redirige al dashboard
+    }, 1500);
   };
 
   return (
@@ -101,7 +105,6 @@ export default function Login() {
             Sign In
           </Typography>
 
-          {/* Animated Error Alert */}
           <Collapse in={Object.keys(errors).length > 0}>
             <Alert severity="error" sx={{ mb: 2 }}>
               Please fix the errors below.
@@ -116,9 +119,7 @@ export default function Login() {
               fullWidth
               value={formData.email}
               onChange={handleChange}
-              // @ts-ignore
               error={!!errors.email}
-              // @ts-ignore
               helperText={errors.email}
             />
 
@@ -130,17 +131,12 @@ export default function Login() {
               fullWidth
               value={formData.password}
               onChange={handleChange}
-              // @ts-ignore
               error={!!errors.password}
-              // @ts-ignore
               helperText={errors.password}
               InputProps={{
                 endAdornment: (
                   <InputAdornment position="end">
-                    <IconButton
-                      onClick={() => setShowPassword((prev) => !prev)}
-                      edge="end"
-                    >
+                    <IconButton onClick={() => setShowPassword((prev) => !prev)} edge="end">
                       {showPassword ? <VisibilityOff /> : <Visibility />}
                     </IconButton>
                   </InputAdornment>

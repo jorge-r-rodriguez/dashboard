@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    /* Lenguaje y Entorno */
+    "target": "ESNext",                          // Compatible con import.meta.env
+    "module": "ESNext",                          // Necesario para Vite
+    "moduleResolution": "bundler",               // Recomendado por Vite
+    "types": ["vite/client"],                    // Expone import.meta.env correctamente
+    "esModuleInterop": true,                     // Soporte para importar módulos CommonJS
+    "strict": true,                              // Activar comprobación estricta de tipos
+    "forceConsistentCasingInFileNames": true,    // Forzar coincidencia exacta en mayúsculas/minúsculas
+    "skipLibCheck": true                         // Omitir chequeo de tipos en definiciones externas
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}
