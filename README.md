@@ -91,9 +91,7 @@ npm run dev
 
 Este proyecto usa un login simulado. Podés ingresar con cualquier combinación válida como:
 
-<a href="https://jorge-r-rodriguez.github.io/dashboard/" target="_blank">
-  <img src="https://img.shields.io/badge/GitHub%20Pages-Dashboard-blue?logo=github" alt="Ver en GitHub Pages">
-</a>
+[![Ingresando en:](https://img.shields.io/badge/GitHub%20Pages-Dashboard-blue?logo=github)](https://jorge-r-rodriguez.github.io/dashboard/)
 
 
 ```
